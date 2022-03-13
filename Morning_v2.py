@@ -520,8 +520,8 @@ def main():
     config.gpu_options.visible_device_list = "0"
 
     # metrics
-    l_p_10 = []
-    l_p_50 = []
+    l_r_10 = []
+    l_r_50 = []
     l_medr = []
     l_auc = []
     l_cauc = []
@@ -663,21 +663,21 @@ def main():
                     index += 1
             print('is_training:', is_train)
             # --------------Measurement-----------------------------------
-            medr, p10, p50 = Metrics.metrics(l_brand, l_in, l_ist, l_score)
+            medr, r10, r50 = Metrics.metrics(l_brand, l_in, l_ist, l_score)
             auc, cauc = Metrics.auc(l_brand, l_in, l_ist, l_score)
             mrr = Metrics.mrr(l_brand, l_in, l_ist, l_score)
             map = Metrics.map(l_brand, l_in, l_ist, l_score)
 
             l_medr.append(medr)
-            l_p_10.append(p10)
-            l_p_50.append(p50)
+            l_r_10.append(r10)
+            l_r_50.append(r50)
             l_auc.append(auc)
             l_cauc.append(cauc)
             l_mrr.append(mrr)
             l_map.append(map)
 
             save_recommendation_result(args["model"], Epoch, l_brand, l_in, l_ist, l_score, l_score2, l_score3,l_score4)
-            print(l_p_10[Epoch], l_p_50[Epoch], l_medr[Epoch], l_auc[Epoch], l_cauc[Epoch], l_mrr[Epoch], l_map[Epoch])
+            print(l_r_10[Epoch], l_r_50[Epoch], l_medr[Epoch], l_auc[Epoch], l_cauc[Epoch], l_mrr[Epoch], l_map[Epoch])
             Epoch += 1
 
 
