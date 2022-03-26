@@ -26,7 +26,7 @@ feature_size = 128
 attribute_layer1_size = 1024
 attribute_layer2_size = 512
 
-model_path = './morning\\model10'  # model path
+#model_path = './morning\\model10'  # model path
 
 pairs_size = 2
 zzh = 0.001
@@ -39,16 +39,16 @@ margin3_score = 2.0
 
 def load_trainset():
     print('loading...trainset')
-    brand_text_train = np.load('./brand_text_train.npy')
-    in_text_train = np.load('./in_text_train.npy')
-    brand_image_train = np.load('./brand_image_train.npy')
-    in_image_train = np.load('./in_image_train.npy')
-    audience_brand_text_train = np.load('./brand_text_train.npy')
-    audience_in_text_train = np.load('./in_text_train.npy')
-    audience_brand_image_train = np.load('./brand_image_train.npy')
-    audience_in_image_train = np.load('./in_image_train.npy')
-    attribute_brand_train = np.load('./brand_attribute_train_n2v_new.npy')
-    attribute_in_train = np.load('./in_attribute_train_n2v.npy')
+    brand_text_train = np.load('./trainset/brand_text_train.npy')
+    in_text_train = np.load('./trainset/in_text_train.npy')
+    brand_image_train = np.load('./trainset/brand_image_train.npy')
+    in_image_train = np.load('./trainset/in_image_train.npy')
+    audience_brand_text_train = np.load('./audience_trainset/brand_text_train.npy')
+    audience_in_text_train = np.load('./audience_trainset/in_text_train.npy')
+    audience_brand_image_train = np.load('./audience_trainset/brand_image_train.npy')
+    audience_in_image_train = np.load('./audience_trainset/in_image_train.npy')
+    attribute_brand_train = np.load('./attribute_trainset_n2v/brand_attribute_train_n2v_new.npy')
+    attribute_in_train = np.load('./attribute_trainset_n2v/in_attribute_train_n2v.npy')
     print('ok')
     return brand_text_train, in_text_train, brand_image_train, in_image_train, audience_brand_text_train, audience_in_text_train, \
            audience_brand_image_train, audience_in_image_train, attribute_brand_train, attribute_in_train
@@ -56,16 +56,16 @@ def load_trainset():
 
 def load_testset():
     print('loading...testset')
-    brand_text_test = np.load('./brand_text_test.npy')
-    in_text_test = np.load('./in_text_test.npy')
-    brand_image_test = np.load('./brand_image_test.npy')
-    in_image_test = np.load('./in_image_test.npy')
-    audience_brand_text_test = np.load('./brand_text_test.npy')
-    audience_in_text_test = np.load('./in_text_test.npy')
-    audience_brand_image_test = np.load('./brand_image_test.npy')
-    audience_in_image_test = np.load('./in_image_test.npy')
-    attribute_brand_test = np.load('./brand_attribute_test_n2v_new.npy')
-    attribute_in_test = np.load('./in_attribute_test_n2v.npy')
+    brand_text_test = np.load('./testset/brand_text_test.npy')
+    in_text_test = np.load('./testset/in_text_test.npy')
+    brand_image_test = np.load('./testset/brand_image_test.npy')
+    in_image_test = np.load('./testset/in_image_test.npy')
+    audience_brand_text_test = np.load('./audience_testset/brand_text_test.npy')
+    audience_in_text_test = np.load('./audience_testset/in_text_test.npy')
+    audience_brand_image_test = np.load('./audience_testset/brand_image_test.npy')
+    audience_in_image_test = np.load('./audience_testset/in_image_test.npy')
+    attribute_brand_test = np.load('./attribute_testset_n2v/brand_attribute_test_n2v_new.npy')
+    attribute_in_test = np.load('./attribute_testset_n2v/in_attribute_test_n2v.npy')
     print('ok')
     return brand_text_test, in_text_test, brand_image_test, in_image_test, audience_brand_text_test, audience_in_text_test, \
            audience_brand_image_test, audience_in_image_test, attribute_brand_test, attribute_in_test
@@ -73,16 +73,16 @@ def load_testset():
 
 def load_testset2():
     print('loading...testset2')
-    brand_text_test = np.load('./brand_text_test_2.npy')
-    in_text_test = np.load('./in_text_test_2.npy')
-    brand_image_test = np.load('./brand_image_test_2.npy')
-    in_image_test = np.load('./in_image_test_2.npy')
-    audience_brand_text_test = np.load('./brand_text_test_2.npy')
-    audience_in_text_test = np.load('./in_text_test_2.npy')
-    audience_brand_image_test = np.load('./brand_image_test_2.npy')
-    audience_in_image_test = np.load('./in_image_test_2.npy')
-    attribute_brand_test = np.load('./brand_attribute_test_2_n2v_new.npy')
-    attribute_in_test = np.load('./in_attribute_test_2_n2v.npy')
+    brand_text_test = np.load('./testset/brand_text_test_2.npy')
+    in_text_test = np.load('./testset/in_text_test_2.npy')
+    brand_image_test = np.load('/data/dataset_100_with_text_new/testset/brand_image_test_2.npy')
+    in_image_test = np.load('./testset/in_image_test_2.npy')
+    audience_brand_text_test = np.load('./audience_testset/brand_text_test_2.npy')
+    audience_in_text_test = np.load('./audience_testset/in_text_test_2.npy')
+    audience_brand_image_test = np.load('./audience_testset/brand_image_test_2.npy')
+    audience_in_image_test = np.load('./audience_testset/in_image_test_2.npy')
+    attribute_brand_test = np.load('./attribute_testset_n2v/brand_attribute_test_2_n2v_new.npy')
+    attribute_in_test = np.load('./attribute_testset_n2v/in_attribute_test_2_n2v.npy')
     print('ok')
     return brand_text_test, in_text_test, brand_image_test, in_image_test, audience_brand_text_test, audience_in_text_test, \
            audience_brand_image_test, audience_in_image_test, attribute_brand_test, attribute_in_test
@@ -264,7 +264,7 @@ def get_attribute_representation(attribute_brands, attribute_influencers):
     return brand_attribute_representation_v2, in_attribute_representation_v2
 
 
-def get_content_representation(brands_text, brands_image, influencers_text, influencers_image):
+def get_content_representation(brands_text, brands_image, influencers_text, influencers_image,keep_prob):
     w_content_text1 = get_weights([text_size, text_layer1_size], zzh)
     dropout1 = tf.nn.dropout(w_content_text1, keep_prob)
     b_content_text1 = tf.Variable(tf.random_normal([text_layer1_size], stddev=0.1))
@@ -318,7 +318,7 @@ def get_content_representation(brands_text, brands_image, influencers_text, infl
 
 
 def get_audience_representation(audience_brands_text, audience_brands_image, audience_influencers_text,
-                                audience_influencers_image):
+                                audience_influencers_image,keep_prob):
     w_audience_text1 = get_weights([text_size2, text_layer1_size], zzh)
     dropout2 = tf.nn.dropout(w_audience_text1, keep_prob)
     b_audience_text1 = tf.Variable(tf.random_normal([text_layer1_size], stddev=0.1))
@@ -381,8 +381,8 @@ with graph1.as_default():
     ############################################################
     brand_attribute_representation_v2, in_attribute_representation_v2 = get_attribute_representation(attribute_brands, attribute_influencers)
     ############################################################
-    brand_content_representation, in_content_representation = get_content_representation(brands_text, brands_image, influencers_text, influencers_image)
-    brand_au_representation, in_au_representation = get_audience_representation(audience_brands_text, audience_brands_image, audience_influencers_text, audience_influencers_image)
+    brand_content_representation, in_content_representation = get_content_representation(brands_text, brands_image, influencers_text, influencers_image,keep_prob)
+    brand_au_representation, in_au_representation = get_audience_representation(audience_brands_text, audience_brands_image, audience_influencers_text, audience_influencers_image,keep_prob)
     ############################################################
     # co-attention mechanism   512 is dimension length
     w_brand_fusion1 = get_weights([image_layer4_size, 512], zzh)
@@ -492,9 +492,9 @@ with graph1.as_default():
 
     LEARNING_RATE_BASE = 0.002
     LEARNING_RATE_DECAY = 0.99
-    LEARNING_RATE_STEP = 3000
-    gloabl_steps = tf.Variable(0, trainable=False)
-    learning_rate = tf.train.exponential_decay(LEARNING_RATE_BASE, gloabl_steps, LEARNING_RATE_STEP,
+    LEARNING_RATE_STEP = 12000
+    global_steps = tf.Variable(0, trainable=False)
+    learning_rate = tf.train.exponential_decay(LEARNING_RATE_BASE, global_steps, LEARNING_RATE_STEP,
                                                LEARNING_RATE_DECAY, staircase=True)
     tf.add_to_collection('losses', cross_entropy)
     tf.add_to_collection('losses', triplet_loss1)
@@ -502,8 +502,8 @@ with graph1.as_default():
     tf.add_to_collection('losses', triplet_loss3)
     tf.add_to_collection('losses', regularization)
     loss = tf.add_n(tf.get_collection('losses'))
-    train_op = tf.train.AdamOptimizer(learning_rate).minimize(loss)
-
+    #train_op = tf.train.AdamOptimizer(learning_rate).minimize(loss)
+    train_op = tf.train.AdamOptimizer(learning_rate).minimize(loss, global_step=global_steps)
 
 def main():
     ap = argparse.ArgumentParser()
@@ -580,6 +580,8 @@ def main():
                     mean_loss += loss_value
                     duration = time.time() - start_time
                     if (step % 5000 == 0 and step != 0):
+                        #lr, gs = sess.run([learning_rate, global_steps], feed_dict=feed_dict)
+                        #print(lr, gs)
                         print('Step %d: loss = %.2f (%.3f sec)' % (step, mean_loss / step, duration))
                         print('cross_entropy', ce_loss)
                         print('triplet_loss1', t_loss1)
@@ -614,7 +616,7 @@ def main():
                     print('Step %d: loss = %.2f ' % (t, test_mean_loss / t))
             print('is_training:', is_train)
             print('-----test2-----')
-            ExcelFile1 = xlrd.open_workbook('./testset_p.xlsx')
+            ExcelFile1 = xlrd.open_workbook('./testset_r.xlsx')
             sheet1 = ExcelFile1.sheet_by_index(0)
             l_brand = []
             l_in = []
@@ -679,7 +681,9 @@ def main():
             save_recommendation_result(args["model"], Epoch, l_brand, l_in, l_ist, l_score, l_score2, l_score3,l_score4)
             print(l_r_10[Epoch], l_r_50[Epoch], l_medr[Epoch], l_auc[Epoch], l_cauc[Epoch], l_mrr[Epoch], l_map[Epoch])
             Epoch += 1
-
+    for ii in range(0, Epoch_):
+        print(ii)
+        print(l_r_10[ii], l_r_50[ii], l_medr[ii], l_auc[ii], l_cauc[ii], l_mrr[ii], l_map[ii])
 
 if __name__ == '__main__':
     main()

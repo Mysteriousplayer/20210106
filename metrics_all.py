@@ -180,7 +180,7 @@ class Metrics:
 
     def auc(l_brand, l_in, l_ist, l_score):
         # AUC cAUC
-        test_auc_file_path = './testset_auc.xlsx'
+        test_auc_file_path = '/data/dataset_100_with_text_new/testset_auc.xlsx'
         ExcelFile1 = xlrd.open_workbook(test_auc_file_path)
         sheet1 = ExcelFile1.sheet_by_index(0)
         err = 0
