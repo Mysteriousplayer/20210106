@@ -6,6 +6,8 @@ A revised version of the paper has been published.
 features link: https://pan.baidu.com/s/1NML0tH8Z50_LkO-kdPxslQ 
 code：2009
 
+The camera ready version of the paper has been published.
+
 ## Cite
 > @ARTICLE{wang_2023, \
 > &emsp;&emsp;&emsp;&emsp; author={Wang, Shaokun and Gan, Tian and Liu, Yuan and Wu, Jianlong and Cheng, Yuan and Nie, Liqiang}, \
