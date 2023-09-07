@@ -15,5 +15,4 @@ The camera ready version of the paper has been published.
 > &emsp;&emsp;&emsp;&emsp; title={Micro-Influencer Recommendation by Multi-Perspective Account Representation Learning}, \
 > &emsp;&emsp;&emsp;&emsp; year={2023}, \
 > &emsp;&emsp;&emsp;&emsp; volume={25}, \
-> &emsp;&emsp;&emsp;&emsp; number={}, \
 > &emsp;&emsp;&emsp;&emsp; pages={2749-2760}}
