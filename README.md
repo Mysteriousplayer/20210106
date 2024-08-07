@@ -3,7 +3,7 @@ Social media audiences dataset: plase contact email: gantian@sdu.edu.cn.
 
 A revised version of the paper has been published.
 
-features link: https://pan.baidu.com/s/1NML0tH8Z50_LkO-kdPxslQ 
+features link: [https://pan.baidu.com/s/1NML0tH8Z50_LkO-kdPxslQ](https://pan.baidu.com/s/1IgpCWdWxY2BUuPrUp-krtA ) 
 code：2009
 
 The camera ready version of the paper has been published.
