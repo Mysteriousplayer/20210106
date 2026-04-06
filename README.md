@@ -1,4 +1,4 @@
-# Micro-Influencer Recommendation by Multi-Perspective Account Representation Learning
+# [TMM 2022] Micro-Influencer Recommendation by Multi-Perspective Account Representation Learning
 Social media audiences dataset: plase contact email: gantian@sdu.edu.cn.
 
 A revised version of the paper has been published.
