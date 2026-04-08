@@ -22,7 +22,9 @@ A new version of the paper has been published.
 </div>
 
 -We propose the MORNING by novelly modeling social media accounts from the perspective of individual image, target audiences, and cooperation preferences. Experimental results show that our method achieves state-of-the-art performance.
+
 -We introduce target audiences as a new kind of marketing role in the micro-influencer recommendation. Multi-modal audiences information is utilized to learn the account audiences representation. And we collect a social-media-audiences dataset, which can benefit future research.
+
 -We successfully mine cooperation preferences from interaction information on social media. Based on account attributes, we build the attribute co-occurrence graph network to capture cooperation preferences at the attribute level, and the attribute node embeddings are further utilized to construct the account attribute representation.
 
 ## Installation
